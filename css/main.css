@@ -1,0 +1,222 @@
+/*** sectioning elements ***/
+
+body {
+  font-family: sans-serif;
+  margin-top: 60px;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 5px 0 5px #999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+main {
+  margin: 48px 0;
+}
+
+footer {
+  margin: 48px 0;
+}
+
+nav {
+
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+
+/**** content styles ***/
+
+h1 {
+  color: #000;
+  font-size: 2.6rem;
+  line-height: 3.0rem;
+  margin: 0;
+}
+
+h2 {
+
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+
+}
+
+
+/*** image styles ***/
+
+img  {
+
+}
+
+
+/*** link styles ***/
+
+a:link, a:visited {
+  color: #50a3d9;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #14405c;
+}
+
+.news a:link, .news a:visited {
+  color: #000;
+}
+
+.news a:hover, .news a:active {
+  color: #50a3d9;
+}
+
+/* odin overrides */
+.navbar, .navbar-slideout {
+  background-color: #fff;
+  justify-content: flex-start;
+}
+
+a.navbar-brand {
+  color: #b8071a;
+  font-weight: bold;
+}
+
+.navbar a:active, .navbar a:hover {
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: #50a3d9;
+  width: 100%;
+}
+
+/* quiz styles */
+.tagline {
+  color: #444;
+  display: block;
+  margin: 0.2rem 0;
+}
+
+.date {
+  color: #888;
+  display: block;
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+
+.meta {
+  margin: 0.8rem 0;
+}
+
+.byline {
+  margin: 1.2rem 0;
+}
+
+.author-name {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.4rem 0;
+}
+
+.author-title {
+  display: block;
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+
+h2.question {
+  background-color: #14405c;
+  color: #fff;
+  display: block;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+label {
+  color: #444;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.choice {
+  background-color: #eee;
+  padding: 0.4rem;
+}
+
+.choice img {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.result {
+  border: 1px solid #999;
+  margin: 24px 0;
+  padding: 24px;
+}
+
+#result-title {
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#result-heading {
+  font-size: 18px;
+}
+
+#result-text {
+  font-size: 0.9rem;
+}
+
+/* sidebar styles */
+.news {
+  border: 1px solid #999;
+  border-top: 8px solid #000;
+  border-radius: 0.2rem;
+  margin-bottom: 28px;
+  padding: 14px;
+}
+
+.news p {
+  color: #444;
+  font-size: 13px;
+  margin-bottom: 0.8rem;
+}
+
+.quiz-link {
+  margin: 0.8rem 0;
+  width: 50%;
+}
+
+@media (max-width: 479px), (min-width: 960px) {
+  .quiz-link {
+    margin: 0.8rem 0;
+    width: 100%;
+  }
+}
