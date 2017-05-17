@@ -82,11 +82,11 @@ function checkIt() {
 
   // Display result
   //document.getElementById('result-text').innerHTML = counts;
+  document.getElementById('result-img').innerHTML = message3;
   document.getElementById('result-title').innerHTML = message0;
   document.getElementById('result-heading').innerHTML = message1;
   document.getElementById('result-text').innerHTML = message2;
-  document.getElementById('result-img').innerHTML = message3;
-
+  
 
 
 }
