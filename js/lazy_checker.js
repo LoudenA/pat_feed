@@ -68,18 +68,18 @@ function checkIt() {
   var image;
 
   if (max == not) {
-   image= "<img src='img/notimg.jpg'>";
+   image= "<img src='img/not.jpg'>";
 
   }
   else if (max == somewhat) {
-  image = "<img src='img/somewhatimg.jpg'>";
+  image = "<img src='img/somewhat.jpg'>";
 
   }
   else if (max == kinda) {
-  image = "<img src='img/kindaimg.jpg'>";
+  image = "<img src='img/kinda.jpg'>";
   }
   else if (max == very) {
-  image = "<img src='img/veryimg.jpg'>";
+  image = "<img src='img/very.jpg'>";
   }
 
 
