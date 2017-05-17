@@ -89,8 +89,8 @@ function checkIt() {
 
 
   // Display result
-  document.getElementById('result-text').innerHTML = counts;
-  document.getElementById('result-img').innerHTML = image;
+  //document.getElementById('result-text').innerHTML = counts;
+  document.getElementById('result-image').innerHTML = image;
   document.getElementById('result-title').innerHTML = title;
   document.getElementById('result-heading').innerHTML = heading;
 
