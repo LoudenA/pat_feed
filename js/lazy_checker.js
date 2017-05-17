@@ -10,6 +10,7 @@ function checkIt() {
   var kindaimg = "<img src='img/kinda.jpg'>"
 
   // Get all checkbox elements from form
+  var title = "How Lazy Are You?";
   var elements = document.getElementsByClassName('answer');
 
   // Tally results
@@ -44,34 +45,41 @@ function checkIt() {
   // What is the highest value?
   var max = Math.max(kinda, somewhat, not, very);
 
-  // Form a message
-  var message;
+  // Form a heading
+  var heading;
 
   if (max == not) {
-     message0 = "How Lazy Are You?"
-     message1 = "Not Lazy"
-     message2 = "You're not a couch potato. Maybe you should try it one day..."
-     message3 = notimg
+   heading = "You're not a couch potato...maybe you should try it sometime.";
 
   }
   else if (max == somewhat) {
-    message0 = "How Lazy Are You?"
-    message1 = "Somewhat lazy"
-    message2 = "You aren't too lazy!"
-    message3 = somewhatimg
+  heading = "You're not too lazy";
 
   }
   else if (max == kinda) {
-    message0 = "How Lazy Are You?"
-    message1 = "Kinda lazy"
-    message2 = "Um, you could stand to do more."
-    message3 = kindaimg
+  heading = "Eh. You could stand to do more.";
   }
   else if (max == very) {
-    message0 = "How Lazy Are You?"
-    message1 = "Very lazy"
-    message2 = "Wow, I thought I was lazy..."
-    message3 = veryimg
+  heading = "Wow...I thought I was lazy.";
+  }
+  
+  
+  // Form an image
+  var image;
+
+  if (max == not) {
+   image= "<img src='img/notimg.jpg'>";
+
+  }
+  else if (max == somewhat) {
+  image = "<img src='img/somewhatimg.jpg'>";
+
+  }
+  else if (max == kinda) {
+  image = "<img src='img/kindaimg.jpg'>";
+  }
+  else if (max == very) {
+  image = "<img src='img/veryimg.jpg'>";
   }
 
 
@@ -81,11 +89,11 @@ function checkIt() {
 
 
   // Display result
-  //document.getElementById('result-text').innerHTML = counts;
-  document.getElementById('result-img').innerHTML = message3;
-  document.getElementById('result-title').innerHTML = message0;
-  document.getElementById('result-heading').innerHTML = message1;
-  document.getElementById('result-text').innerHTML = message2;
+  document.getElementById('result-text').innerHTML = counts;
+  document.getElementById('result-img').innerHTML = image;
+  document.getElementById('result-title').innerHTML = title;
+  document.getElementById('result-heading').innerHTML = heading;
+
   
 
 
